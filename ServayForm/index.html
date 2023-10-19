@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Survey Form</h1>
+        <form id="surveyForm">
+            <div class="form-group row">
+                <div class="col">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select class="form-control" id="country" required>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Chaina">Chaina</option>
+                    <option value="Austaliya">Austaliya</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Afganistan">Afganistan</option>
+                    <option value="UAE">UAE</option>
+               
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required>
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="profession">Profession</label>
+                <input type="text" class="form-control" id="profession" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number (10 digits)</label>
+                <input type="tel" class="form-control" id="mobile" pattern="[0-9]{10}" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js" >   
+
+
+
+    </script>
+</body>
+</html>
